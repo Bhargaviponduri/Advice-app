@@ -1,0 +1,146 @@
+  #root ,body, html {
+    // margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+// .container {
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     flex-direction: row;
+// }
+.container {
+    height: 100vh;
+}
+
+.card {
+    margin: 0 auto;
+    background-color: #eee;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    color: #000;
+}
+
+.buttonStyles {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.theme-options {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 0;
+    div {
+        width:20px;
+        height: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 2px 10px;
+        display: inline-block;
+        opacity: 0.5;
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+#theme-white {
+    background-color: #eee;
+}
+
+#theme-blue {
+    background-color: #1e41c1;
+}
+
+#theme-orange {
+    background-color: #b64b1e;
+}
+
+#theme-green {
+    background-color: #5faf3b;
+}
+
+#theme-purple {
+    background-color: #7852ae;
+}
+
+#theme-black {
+    background-color: #000;
+}
+
+.container.theme-green {
+    background-color: #c3e3c1;
+    .card{
+        background-color: #e2f6e1;
+        color: #5faf3b;
+    }
+    .buttonStyles {
+        background-color: none;
+        cursor: pointer;
+        border-color: #c3e3c1;
+        color: #4eb41e;
+    }
+}
+
+.container.theme-blue {
+    background-color: #bec7e7;
+    .card{
+        background-color: #d8def4;
+        color: #1e41c1;
+    }
+    .buttonStyles {
+        background-color: none;
+        cursor: pointer;
+        border-color: none;
+        color: #1e41c1;
+    }
+}
+
+.container.theme-orange {
+    background-color: #f4c9b7;
+    .card{
+        background-color: #f4dfd6;
+        color: #b64b1e;
+    }
+    .buttonStyles {
+        background-color: none;
+        cursor: pointer;
+        border-color: #f4c9b7 ;
+        color: #b64b1e;
+    }
+}
+
+.container.theme-black {
+    background-color: #5c5c5c;
+    .card{
+        background-color: #333;
+        color: #ffffff;
+    }
+    .buttonStyles {
+        background-color: #5c5c5c;
+        cursor: pointer;
+        border-color: rgb(81, 79, 79);
+        color: #ffffff;
+    }
+}
+
+.container.theme-purple {
+    background-color: #d0b7f4;
+    .card{
+        background-color: #ecdfff;
+        color: #7852ae;
+    }
+    .buttonStyles {
+        background-color: none;
+        cursor: pointer;
+        border-color: #d0b7f4;
+        color: #7852ae;
+    }
+}
